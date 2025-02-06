@@ -1,0 +1,10 @@
+def sol():
+    s = input()
+    c = 0
+    st = 'a'
+    for ch in s:
+        d = abs(ord(ch) - ord(st))
+        c += min(d, 26 - d)
+        st = ch
+    print(c)
+sol()
