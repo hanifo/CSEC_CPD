@@ -1,0 +1,13 @@
+n=int(input())
+b=[]
+d=[]
+c=0
+for i in range (n):
+    a=input().split()
+    b.append(a[0])
+    d.append(a[1])
+for i in range (n):
+    for j in range (n):
+        if b[i]==d[j]:
+            c+=1
+print(c)
