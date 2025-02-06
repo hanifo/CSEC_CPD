@@ -1,0 +1,9 @@
+n=int(input())
+a=input()
+b=a
+c=0
+for i in range (n):
+    if i+1<n:
+        if a[i]==a[i+1]:
+            c+=1
+print(c)
