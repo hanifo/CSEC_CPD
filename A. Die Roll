@@ -1,0 +1,8 @@
+y, w = map(int, input().split())
+wn = 6 - max(y, w) + 1
+g = 6
+while g:
+    if wn % g == 0 and 6 % g == 0:
+        break
+    g -= 1
+print(f"{wn // g}/{6 // g}")
