@@ -1,0 +1,7 @@
+a,b = map(int,input().split())
+c = 1
+while True:
+    if (c * a - b) % 10 == 0 or (c * a) % 10 == 0:
+        break
+    c += 1
+print(c)
